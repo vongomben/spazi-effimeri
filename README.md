@@ -9,4 +9,8 @@ Qui ci sono un sacco di altre info importantissime!
 
 bla bla bla 
 
+questa é l'immgine del gatto
+
+![il gatto ](./img/cat.jpg)
+
 
