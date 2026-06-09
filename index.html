@@ -1,10 +1,351 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>My First Heading</h1>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Rivers | Design &amp; Development</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#131b2e",
+                    "surface-container-highest": "#d3e4fe",
+                    "on-surface": "#0b1c30",
+                    "tertiary-container": "#191c1e",
+                    "surface-tint": "#565e74",
+                    "on-secondary-fixed-variant": "#004395",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "outline-variant": "#c6c6cd",
+                    "on-error": "#ffffff",
+                    "tertiary": "#000000",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-secondary-fixed": "#001a42",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#191c1e",
+                    "on-surface-variant": "#45464d",
+                    "surface-dim": "#cbdbf5",
+                    "surface-container-high": "#dce9ff",
+                    "background": "#f8f9ff",
+                    "surface-container": "#e5eeff",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-tertiary-container": "#818486",
+                    "surface-bright": "#f8f9ff",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary-container": "#7c839b",
+                    "primary": "#000000",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-background": "#0b1c30",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#fefcff",
+                    "outline": "#76777d",
+                    "inverse-surface": "#213145",
+                    "on-primary-fixed": "#131b2e",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-container": "#2170e4",
+                    "surface": "#f8f9ff",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "secondary": "#0058be",
+                    "inverse-primary": "#bec6e0",
+                    "surface-variant": "#d3e4fe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1120px",
+                    "section-gap-mobile": "80px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-caps": ["JetBrains Mono"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .experience-line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 0;
+            width: 2px;
+            background-color: #E2E8F0;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.02);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-16">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high ring-1 ring-outline-variant">
+<img alt="Alex Rivers" class="w-full h-full object-cover" data-alt="A professional headshot of Alex Rivers, a creative designer and developer. He is looking directly at the camera with a subtle, confident smile. The portrait is captured in high-key, soft studio lighting against a minimal light gray background, echoing a premium and modern aesthetic. The focus is sharp on his features, conveying authority and approachability." src="https://lh3.googleusercontent.com/aida/AP1WRLsKVJgbmgJpgfNt4ftA7sPVmMSCyxNraknbfLZkx-L_YEOlmOoXQx2dG2J8WItHsWxdPc652O4G9DbcwGaRNyULxYAvXpYhyBukf6DWFEQjzJ5ESGK3VltGUse-FF68niUvl47zWWR1PXYJfPI0ZZ8fA2v3RsAKRygWe5XCkDB-BD32jMFzMmL9MfjzTHGidWr4qMme6QcF1fJdtKYn5K-0D54FBk4eeWzGiNBQBIwlIibQ41W2tdZUX70"/>
+</div>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Alex Rivers</span>
+<div class="flex items-center gap-2 ml-4 hidden md:flex">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Available for work</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-200" href="#experience">Experience</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-200" href="#projects">Projects</a>
+<a class="px-4 py-2 bg-primary text-on-primary rounded hover:bg-primary/90 transition-all font-label-caps text-label-caps" href="#contact">Get in touch</a>
+</nav>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="sensors">sensors</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-24 md:pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-x-hidden">
+<!-- Hero Section -->
+<section class="mb-section-gap-mobile md:mb-section-gap flex flex-col items-start">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6">
+                Bridging the gap between design and development.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                I am a multidisciplinary creator focused on building intentional digital experiences that are as functional as they are beautiful. Based in London, working globally.
+            </p>
+<!-- Social Links -->
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-2 px-6 py-3 border border-outline-variant rounded-full hover:bg-surface-container-low transition-all group" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="terminal">terminal</span>
+<span class="font-label-caps text-label-caps">GitHub</span>
+</a>
+<a class="flex items-center gap-2 px-6 py-3 border border-outline-variant rounded-full hover:bg-surface-container-low transition-all group" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="work">work</span>
+<span class="font-label-caps text-label-caps">LinkedIn</span>
+</a>
+<a class="flex items-center gap-2 px-6 py-3 border border-outline-variant rounded-full hover:bg-surface-container-low transition-all group" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="person">person</span>
+<span class="font-label-caps text-label-caps">Twitter</span>
+</a>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="mb-section-gap-mobile md:mb-section-gap" id="experience">
+<div class="grid md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-md text-headline-md mb-4">Experience</h2>
+<p class="text-on-surface-variant font-body-md">A decade of crafting digital products for startups and enterprises.</p>
+</div>
+<div class="md:col-span-8 flex flex-col gap-12">
+<div class="relative pl-8 experience-line">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">2021 — PRESENT</span>
+<h3 class="font-headline-sm text-headline-sm mb-1">Senior Product Designer</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Lumina Systems</p>
+<ul class="list-none space-y-2">
+<li class="flex items-start gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-sm mt-1" data-icon="arrow_forward">arrow_forward</span>
+                                Leading the end-to-end design of the next-generation cloud infrastructure dashboard.
+                            </li>
+</ul>
+</div>
+<div class="relative pl-8 experience-line">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">2018 — 2021</span>
+<h3 class="font-headline-sm text-headline-sm mb-1">UI/UX Engineer</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Studio Arca</p>
+<ul class="list-none space-y-2">
+<li class="flex items-start gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-sm mt-1" data-icon="arrow_forward">arrow_forward</span>
+                                Developed a proprietary design system used by over 50 client projects.
+                            </li>
+</ul>
+</div>
+<div class="relative pl-8 experience-line">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">2015 — 2018</span>
+<h3 class="font-headline-sm text-headline-sm mb-1">Junior Creative Developer</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Pixel Forge</p>
+<ul class="list-none space-y-2">
+<li class="flex items-start gap-2 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-sm mt-1" data-icon="arrow_forward">arrow_forward</span>
+                                Crafted high-performance interactive landing pages for Fortune 500 brands.
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Grid -->
+<section class="mb-section-gap-mobile md:mb-section-gap">
+<h2 class="font-headline-md text-headline-md mb-8">Technical Proficiency</h2>
+<div class="flex flex-wrap gap-3">
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">UI/UX Design</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps text-secondary">React</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">Tailwind CSS</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">Figma</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps text-secondary">Three.js</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">TypeScript</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">Node.js</span>
+</div>
+<div class="px-5 py-2.5 bg-surface-container-low rounded-full border border-outline-variant">
+<span class="font-label-caps text-label-caps">Python</span>
+</div>
+</div>
+</section>
+<!-- Projects Gallery -->
+<section class="mb-section-gap-mobile md:mb-section-gap" id="projects">
+<h2 class="font-headline-md text-headline-md mb-8">Selected Works</h2>
+<div class="grid md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="group project-card cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-xl bg-surface-container mb-6 ring-1 ring-outline-variant transition-all duration-500">
+<img alt="Interface Design" class="project-image w-full h-full object-cover transition-transform duration-700" data-alt="A sophisticated user interface for a financial technology application, displayed on a high-resolution screen in a minimalist office setting. The design features a clean, professional aesthetic with deep navy blues and sharp white typography. Soft, diffused natural light from a window creates a peaceful atmosphere. The UI displays complex data visualizations with elegant simplicity." src="https://lh3.googleusercontent.com/aida/AP1WRLvdd3UAI8XFveo_yuFnZSGcCSGEY26qyEOeaqcqy87uKkWppsCnnYSHGrK5hY9m5LD350BwhgKSRGXzPItXhYqiKZN0H7Ze6cgPE4eU2gmhdP3PK_MSVt7-JqhvVMG6Ge_2zBboM_WLkxS14ZmpCgiNIrjUxmsuPVmY6xV2ULjotGkCGfx12pyhxsnPqt18HOeolGcJr-Of1ilpFcwHhQIhkH3VVB3oqcv0mFIT2uU2ENHGWG3I3P9yqVY"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Vortex Analytics</h3>
+<p class="text-on-surface-variant font-body-md">Cloud Infrastructure Dashboard</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" data-icon="north_east">north_east</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group project-card cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-xl bg-surface-container mb-6 ring-1 ring-outline-variant transition-all duration-500">
+<img alt="Code Screenshot" class="project-image w-full h-full object-cover transition-transform duration-700" data-alt="A detailed view of a developer's workspace focusing on a sleek laptop displaying lines of React code. The environment is dark and professional, with a cool blue ambient light illuminating a mechanical keyboard and a clean desk surface. The aesthetic is focused and technical, emphasizing precision and modern engineering. The lighting is low-contrast with soft glows from the screen." src="https://lh3.googleusercontent.com/aida/AP1WRLuzzXpEY1VmAJeTQbXMovzxLhomj_ylwJ5m4JjHavEk4gOL3wUC6GPVxsfg9xiRhYEhUpKTM4Wb_ey1bP-ry-iNJJHN_ZsayXGbWUd6Fyw4ZjrdxrLXqgBwLJrH7yljP2S-K47bNTIcwi2VnFNoEKtxNM6hSCy7r6ukFad3G2Kku2inXY54tTp79UWlTtobE0JIktH2CL3wpmcsHkJntu67c28OmYaZFxdkfqUVKSRCMQMINi4zrm9Rmik"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">System-X</h3>
+<p class="text-on-surface-variant font-body-md">High-Performance Design System</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" data-icon="north_east">north_east</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="bg-surface-container-highest rounded-3xl p-10 md:p-20 text-center flex flex-col items-center" id="contact">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6">Let's build something intentional.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">Currently open to freelance collaborations and permanent leadership roles in forward-thinking companies.</p>
+<a class="px-10 py-5 bg-primary text-on-primary rounded-full hover:shadow-xl transition-all font-label-caps text-label-caps text-lg flex items-center gap-3" href="mailto:hello@alexrivers.com">
+                Get in touch
+                <span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-gutter">
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface">ALEX RIVERS</span>
+<div class="flex gap-8">
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-all" href="#">Bio</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-all" href="#experience">Experience</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-all" href="#projects">Projects</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-all" href="#contact">Contact</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Alex Rivers. Crafted with intention.</p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden bg-surface border-t border-outline-variant shadow-sm h-16 flex justify-around items-center px-4">
+<a class="flex flex-col items-center justify-center text-secondary bg-secondary-fixed/30 rounded-full p-2 transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high transition-colors transition-all active:scale-95" href="#experience">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high transition-colors transition-all active:scale-95" href="#projects">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high transition-colors transition-all active:scale-95" href="#contact">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</nav>
+<script>
+        // Smooth scroll interaction for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
 
-<p>My first paragraph.</p>
+        // Intersection observer for fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
 
-</body>
-</html>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
